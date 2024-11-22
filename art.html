@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/grid-gallery.css"/>
+        
+        <style>
+                        .gg-container
+            {
+                margin-left: auto;
+                margin-right: auto;
+                max-height: 100%;
+                max-width: 100%;
+                border-radius: 12px;
+                max-width: 95%;
+                
+            }
+
+            body
+            {
+                margin-bottom: 200px;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+
+        <div class="sidebar">
+            <div> <a href="/index.html">home</a></div>
+            <div><a href="/art.html">art <small>(18+)</small></a></div>
+            <div><a href="https://www.patreon.com/c/mathc0re">patreon</a></div>
+            <div><a href="https://ko-fi.com/dmtrhl">ko-fi</a></div>
+            <div><a href="https://bsky.app/profile/mathcore.bsky.social">bluesky</a></div>
+            <div><a href="https://itaku.ee/profile/mathc0re">itaku</a></div>
+        </div>
+      
+        <h2>Click for lightbox view, use arrows to navigate or press esc to quit</h2>
+        <h2></h2>
+        <h1>2024</h1>
+        <h2></h2>
+
+        <div class="gg-container">
+            <div class="gg-box dark" id="horizontal">
+                <img src="/res/art/bloodenhelenaresize.avif">
+                <img src="/res/art/earlyhelena.avif">
+                <img src="/res/art/helena.avif">
+                <img src="/res/art/nekocomm.avif">
+                <img src="/res/art/othyfinal.avif">
+                <img src="/res/art/minncoverresize.avif">
+            </div>
+        </div>
+
+        <h1>2023</h1>
+        <h2>soon (tm)</h2>
+        <h2></h2>
+
+        <h2>Gallery and lightbox shamelessly forked from <a href="https://github.com/jestov/grid-gallery">Grid-Gallery</a>, pardon the jank. </h2>
+
+        <script type="text/javascript" src="res/js/grid-gallery.js">
+gridGallery({
+ selector: ".square-gallery",
+ layout: "square",
+ gapLength: 1,
+ columnWidth: 200
+});
+        </script>
+
+    </body>
+</html>

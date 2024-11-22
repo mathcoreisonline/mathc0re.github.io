@@ -1,0 +1,112 @@
+.gg-container {
+  --main-color: #000;
+  --secondary-color: #111;
+  --txt-color: #fff;
+  --img-bg-color: rgb(0, 0, 0);
+  --backdrop-color: rgb(0, 0, 0);
+  --gap-length: 2px;
+  --row-height: 200px;
+  --column-width: 180px;
+}
+
+.gg-container *[data-theme="dark"] {
+  --main-color: #ddd;
+  --secondary-color: #eee;
+  --txt-color: #111;
+  --img-bg-color: rgb(20, 20, 20);
+  --backdrop-color: rgb(30, 30, 30);
+}
+
+.gg-box {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+  grid-row: auto;
+  grid-gap: var(--gap-length);
+  margin: 20px 0;
+}
+
+.gg-box img {
+  object-fit: cover;
+  cursor: pointer;
+
+  width: 100%;
+  height: 100%;
+  background: var(--img-bg-color);
+}
+
+.gg-box img:hover {
+  mix-blend-mode: difference;
+}
+
+#gg-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--backdrop-color);
+  
+  z-index: 9999;
+  text-align: center;
+}
+
+#gg-screen .gg-image {
+  height: 100%;
+  margin-bottom: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gg-screen .gg-image img {
+  max-width: 98%;
+  max-height: 98%;
+  margin: 0 auto;
+}
+
+
+.gg-btn:hover {
+  mix-blend-mode: ;
+}
+
+
+.gg-prev {
+  right: 50px;
+}
+
+.gg-prev,
+.gg-next {
+  bottom: 10px;
+}
+
+@media (min-width: 478px) {
+  .gg-box img:nth-child(2n):not(:last-of-type) {
+    grid-row-end: span 2;
+    grid-row: auto;
+  }
+
+  [data-layout="horizontal"] img:nth-child(2n):not(:last-of-type) {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+  }
+
+  [data-layout="square"] img:nth-child(2n):not(:last-of-type) {
+    grid-row-end: span 1;
+    grid-column-end: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .gg-box {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: calc(var(--row-height) - 15vh);
+    grid-row: auto;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .gg-box {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+}

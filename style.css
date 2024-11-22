@@ -1,0 +1,94 @@
+    @font-face {
+    font-family: 'FragmentMono';
+    src: url(res/fonts/FragmentMono-Regular.ttf);
+    } 
+
+    @font-face {
+    font-family: 'PicoBlack';
+    src: url(res/fonts/PicoA-Black.ttf);
+    } 
+
+    
+    body {
+
+        background-color: rgb(199, 194, 194);
+        color: rgb(34, 34, 34);
+        margin-top: 20px;
+        margin-bottom: 200px;
+        margin-left: 13px;
+        margin-right: 13px;
+
+
+        
+    p
+    {
+        font-family: "FragmentMono";
+        font-size: 15px;
+        text-align: left;
+        line-height: 18px;
+        margin:auto;
+        margin-bottom: 30px;
+    }
+
+    h1
+    {
+        font-family: "PicoBlack";
+        font-style: normal;
+        font-size: 50px;
+        text-align: justify;
+        line-height: 82%;
+        margin:auto;
+        max-width: 700px;
+    }
+
+    h2
+    {
+        font-family: "FragmentMono";
+        font-style: normal;
+        font-size: 10px;
+        text-align: justify;
+        line-height: 12px;
+        margin:auto;
+        max-width: 700px;
+        margin-top: 10px;
+ 
+    }   
+
+    blockquote
+    {
+        font-family: "FragmentMono";
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 24px;
+        margin-bottom: 24px;  
+    }
+
+    div.sidebar
+    {
+        font-family: "PicoBlack";
+        text-decoration: none;
+        text-indent: 20px;
+        font-size: 22px;
+        bottom: 20px; left: 12px%;";
+        margin-inline-start: 19%;
+        display: inline-block;
+        float:right;
+        position: fixed;
+        background: rgb(199, 194, 194);
+    }
+
+    a 
+    { 
+        color: inherit;
+        text-decoration: none; 
+
+    }
+
+    a:hover 
+        {
+            mix-blend-mode: difference;
+            transition: 0.3s;
+        }
+
+
+     }
