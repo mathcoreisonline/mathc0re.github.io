@@ -11,49 +11,65 @@
         max-width: 800px;
         display: flex;
         height: 100%;
-  width: 100%;
+    width: 100%;
         margin: auto;
         
     }
+
+            .back
+            {
+                font-family: fluxc500;
+                font-size: 14px;
+                max-width: 800px;
+            }
             </style>
+
 
         </head>
 
         <body>
 
 
-            <div class="sidebar">
-                <div><a href="/index.html">home </a></div>
-                <div><a href="/not_found.html">discography</a></div>
-                <div><a href="/writings.html">writings/blog</a></div>
-                <div><a href="https://minnomou.bandcamp.com/">bandcamp</a></div>
-                <div><a href="https://soundcloud.com/minnomou">soundcloud</a></div>
-                <div><a href="/not_found.html">stream</a></div>
-            </div>
-            <div class="version">
-                <h3>minnomou.co copyright 2024. v.0.9 beta.</h3>
-                <h3>  </h3>
-            </div>
+    <!-- MENUS AND VIEWPORT DATA -->
 
-            <div class="UA">
-                <h3 id="demo"></h3>
-                <H3></H3>
-                <script>
-                let agent = navigator.userAgent;
-                document.getElementById("demo").innerHTML = "navigator.userAgent:" + agent;
-                </script>    
-            </div>
+    <div>
+        <div class="sidebar">
+            <div><a href="/ab.html">about </a></div>
+            <div><a href="/not_found.html">discography</a></div>
+            <div><a href="/writings.html">writings/blog</a></div>
+            <div><a href="https://minnomou.bandcamp.com/">bandcamp</a></div>
+            <div><a href="https://soundcloud.com/minnomou">soundcloud</a></div>
+            <div><a href="/not_found.html">stream</a></div>
+        </div>
+    </div>
 
-            <div class="scrollpercent">
-                <div id="scroll-percentage" data-scrollPercentage><p class="percentage">&nbsp;</p></div>
-                <div id="percentage-value"></div>
-                 <script>
-                   const updateScrollPercentage = function() { 
-                        const heightOfWindow = window.innerHeight,
-                            contentScrolled = window.pageYOffset,
-                            bodyHeight = document.body.offsetHeight,
-                            percentage = document.querySelector("[data-scrollPercentage] .percentage")
-                            percentageVal = document.querySelector("#percentage-value")
+        <div class="version">
+            <h3>minnomou.co copyright 2024. v.0.9 beta.</h3>
+            <h3>  </h3>
+    </div>
+
+     <div class="UA">
+            <h3 id="demo"></h3>
+            <script>
+            let agent = navigator.userAgent;
+            document.getElementById("demo").innerHTML = "navigator.userAgent:" + agent;
+            </script>    
+     </div>
+
+    <div class="tergiversor">
+            <a href="/index.html"><img viewBox="0 0 205 69" width="70" height="70" src="/tergiversor.svg"></a>
+    </div>
+
+    <div class="scrollpercent">
+        <div id="scroll-percentage" data-scrollPercentage><p class="percentage">&nbsp;</p></div>
+        <div id="percentage-value"></div>
+         <script>
+        const updateScrollPercentage = function() { 
+        const heightOfWindow = window.innerHeight,
+            contentScrolled = window.pageYOffset,
+           bodyHeight = document.body.offsetHeight,
+             percentage = document.querySelector("[data-scrollPercentage] .percentage")
+            percentageVal = document.querySelector("#percentage-value")
             
                         if(bodyHeight - contentScrolled <= heightOfWindow) {
                             percentageVal.textContent = percentage.style.width = "100%"
@@ -70,16 +86,19 @@
                  </script>
                  </div>
             </div>
+        
+            <!-- MENUS AND VIEWPORT DATA -->
 
+            <h2></h2>
 
-
-            <div class="tergiversor">
-                <div><img src="/tergiversor.svg"></div>
-            </div>
+            <p class="back"><a href="/writings.html">return to writings </a></p>
 
             <div class="content">
 
             <h2></h2>
+
+                
+
             <h1>What the fuck did you just fucking say about me</h1>
             <time datetime="2017-10-30" itemprop="datePublished">October 30th, 2017</time>
             
