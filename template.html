@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <link rel="stylesheet" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+            <style>
+                    .artimg img
+    {
+        max-width: 800px;
+        display: flex;
+        height: 100%;
+  width: 100%;
+        margin: auto;
+        
+    }
+            </style>
+
+        </head>
+
+        <body>
+
+
+            <div class="sidebar">
+                <div><a href="/index.html">home </a></div>
+                <div><a href="/not_found.html">discography</a></div>
+                <div><a href="/writings.html">writings/blog</a></div>
+                <div><a href="https://minnomou.bandcamp.com/">bandcamp</a></div>
+                <div><a href="https://soundcloud.com/minnomou">soundcloud</a></div>
+                <div><a href="/not_found.html">stream</a></div>
+            </div>
+            <div class="version">
+                <h3>minnomou.co copyright 2024. v.0.9 beta.</h3>
+                <h3>  </h3>
+            </div>
+
+            <div class="UA">
+                <h3 id="demo"></h3>
+                <H3></H3>
+                <script>
+                let agent = navigator.userAgent;
+                document.getElementById("demo").innerHTML = "navigator.userAgent:" + agent;
+                </script>    
+            </div>
+
+            <div class="scrollpercent">
+                <div id="scroll-percentage" data-scrollPercentage><p class="percentage">&nbsp;</p></div>
+                <div id="percentage-value"></div>
+                 <script>
+                   const updateScrollPercentage = function() { 
+                        const heightOfWindow = window.innerHeight,
+                            contentScrolled = window.pageYOffset,
+                            bodyHeight = document.body.offsetHeight,
+                            percentage = document.querySelector("[data-scrollPercentage] .percentage")
+                            percentageVal = document.querySelector("#percentage-value")
+            
+                        if(bodyHeight - contentScrolled <= heightOfWindow) {
+                            percentageVal.textContent = percentage.style.width = "100%"
+                        }
+                        else {
+                            const total = bodyHeight - heightOfWindow,
+                                got = contentScrolled,
+                                percent = parseInt((got/total) * 100)
+                            percentageVal.textContent = percentage.style.width = percent + "%"
+                        }
+                    }
+            
+                    window.addEventListener('scroll', updateScrollPercentage)
+                 </script>
+                 </div>
+            </div>
+
+
+
+            <div class="tergiversor">
+                <div><img src="/tergiversor.svg"></div>
+            </div>
+
+            <div class="content">
+
+            <h2></h2>
+            <h1>What the fuck did you just fucking say about me</h1>
+            <time datetime="2017-10-30" itemprop="datePublished">October 30th, 2017</time>
+            
+            <div class="artimg">
+                <img src="bliss-600dpi.avif" class="img">
+                </div>
+            
+
+            <h2></h2>
+            <h3>Description</h3>
+            <h2></h2>
+
+                <p>
+                        What the fuck did you just fucking say about me, you little bitch? I’ll have you know I graduated top of
+                        my class in the Navy Seals, 
+                </p>
+                <h2></h2>
+                <h4>
+                    and I’ve been involved in numerous secret raids on Al-Quaeda
+                </h4>
+                <h2></h2>
+                <p>       
+                    and I have
+                    over 300 confirmed kills. I am trained in gorilla warfare and I’m the top sniper in the entire US armed
+                    forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the
+                    likes of which has never been seen before on this Earth, mark my fucking words. You think you can get
+                    away with saying that shit to me over the Internet? 
+                </p>
+                <h2></h2>
+                <h4>
+                        Think again, fucker. 
+                </h4>
+                <h2></h2>
+                <p>   
+                    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> 
+                    As we speak I am contacting my
+                    secret network of spies across the USA and your IP is being traced right now so you better prepare for
+                    the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You’re fucking
+                    dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just
+                    with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire
+                    arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable
+                    ass off the face of the continent, you little shit. If only you could have known what unholy retribution
+                    your little “clever” comment was about to bring down upon you, maybe you would have held your fucking
+                    tongue. But you couldn’t, you didn’t, and now you’re paying the price, you goddamn idiot. I will shit
+                    fury all over you and you will drown in it. You’re fucking dead, kiddo
+                </p>
+
+                <footer>
+                    Some Rights Reserved. Copyrighted materials are used under Fair Use in accordance with U.S.C. Section 107
+                    per U.S. Law.
+                </footer>
+                
+                <footer></footer>
+                <footer></footer>
+
+            </div>
+</body>

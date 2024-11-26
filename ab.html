@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <link rel="stylesheet" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+            <style>
+                    .artimg img
+    {
+        max-width: 800px;
+        display: flex;
+        height: 100%;
+  width: 100%;
+  filter: sepia(100);
+        margin: auto;
+    }
+            </style>
+
+        </head>
+
+        <body>
+
+
+            <div class="sidebar">
+                <div><a href="/index.html">home </a></div>
+                <div><a href="/not_found.html">discography</a></div>
+                <div><a href="/writings.html">writings/blog</a></div>
+                <div><a href="https://minnomou.bandcamp.com/">bandcamp</a></div>
+                <div><a href="https://soundcloud.com/minnomou">soundcloud</a></div>
+            </div>
+            <div class="version">
+                <h3>minnomou.co copyright 2024. v.0.9 beta. /ab.html</h3>
+                <h3>  </h3>
+            </div>
+
+            <div class="UA">
+                <h3 id="demo"></h3>
+                <H3></H3>
+                <script>
+                let agent = navigator.userAgent;
+                document.getElementById("demo").innerHTML = "navigator.userAgent:" + agent;
+                </script>    
+            </div>
+
+            <div class="scrollpercent">
+                <div id="scroll-percentage" data-scrollPercentage><p class="percentage">&nbsp;</p></div>
+                <div id="percentage-value"></div>
+                 <script>
+                   const updateScrollPercentage = function() { 
+                        const heightOfWindow = window.innerHeight,
+                            contentScrolled = window.pageYOffset,
+                            bodyHeight = document.body.offsetHeight,
+                            percentage = document.querySelector("[data-scrollPercentage] .percentage")
+                            percentageVal = document.querySelector("#percentage-value")
+            
+                        if(bodyHeight - contentScrolled <= heightOfWindow) {
+                            percentageVal.textContent = percentage.style.width = "100%"
+                        }
+                        else {
+                            const total = bodyHeight - heightOfWindow,
+                                got = contentScrolled,
+                                percent = parseInt((got/total) * 100)
+                            percentageVal.textContent = percentage.style.width = percent + "%"
+                        }
+                    }
+            
+                    window.addEventListener('scroll', updateScrollPercentage)
+                 </script>
+                 </div>
+            </div>
+
+            <div class="tergiversor">
+                <div><img src="/tergiversor.svg"></div>
+            </div>
+            <div class="content">
+
+                <h2></h2>
+                <h4>minnomou</h4>
+            <p>   
+                she/her (b. 2000, Mexico City) is a mexican producer, songwriter and illustrator. Yea thats about it. ill add more if i release my album idk</p>
+                <h2></h2>
+                <blockquote>" i hate the antichrist "</blockquote>
+                <h2></h2>
+                <h3> — Charitable human being. <small>[1]</small></h3>
+                <h2></h2>
+                
+                <div class="artimg">
+                    <img src="/res/misc/about.jpg" class="img">
+                </div>
+                <h2></h2>
+                <div class="artimg">
+                <img src="minnomou old logo.png" class="img">
+            </div>
+            <h2></h2>
+            <h3>1. made ya think didnt i</h3>
+            <footer>
+                this static site was hand-coded by me. — type <small>FRAGMENT MONO</small> designed by Wei Huang. and <small>FLUX MM, PICO A MEDIUM</small> by Lisa Marshall. — Photo by Braulio Noguez. — thank you for visiting!
+            </footer>
+            <footer></footer>
+            <footer></footer>
+            </div>
+</body>

@@ -2,52 +2,97 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
         <style>
+
+
+
+        
+
+            .vidbg 
+            {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                object-fit: cover;
+                z-index: -1;
+                max-height: 110%;
+                overflow: hidden;
+                width: 100vw;
+                height: 100vh;
+                position: center;
+                top: 0;
+                left: 0;
+            }
+            
+
+            h2
+            {
+                color: rgb(0, 0, 0);
+                mix-blend-mode: difference;
+            }
+
             p
             {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-                max-width: 700px;
-                margin-top: 10px;
-                border-radius: 12px;
+                mix-blend-mode: difference;
             }
 
-            body
+            h1
             {
-                background-image: url(res/IEYESYA.png);
-                background-repeat: no-repeat;
-                background-blend-mode: color-burn;
-                background-attachment: fixed;
-                background-size: 40%;
-                background-position: 0% 100%;
+                color: rgb(255, 255, 255);
+                mix-blend-mode: difference;
             }
 
-            h1 {
-  color: rgb(66, 42, 42);
-}
+            h4{
+                font-weight: 700;
+                mix-blend-mode: difference;
+            }
+
+
 
         </style>
     </head>
 
     <body>
 
-        <h1><a href="/art.html">art <small>(18+)</small></a></h1>
-        <h1><a href="https://www.patreon.com/c/mathc0re">patreon</a></h1>
-        <h1><a href="https://ko-fi.com/dmtrhl">ko-fi</a></h1>
-        <h1><a href="https://bsky.app/profile/mathcore.bsky.social">bluesky</a></h1>
-        <h1><a href="https://x.com/mathc0re"> twitter</a></h1>
-        <h2></h2>
-        <h2>eat my ass elon.</h2>
-        <h2></h2>
 
-
+        <video preload="true" autoplay loop muted plays-inline class="vidbg">
+            <source src="/crop.webm" type="video/webm" /> 
+        </video>
 
         <div class="sidebar">
-            <div>mathc0re.neocities.org</div>
+            <div><a href="/ab.html">about </a></div>
+            <div><a href="/not_found.html">discography</a></div>
+            <div><a href="/writings.html">writings/blog</a></div>
+            <div><a href="https://minnomou.bandcamp.com/">bandcamp</a></div>
+            <div><a href="https://soundcloud.com/minnomou">soundcloud</a></div>
+            <div><a href="/not_found.html">stream</a></div>
+        </div>
+        <div class="version">
+            <h3>minnomou.co copyright 2024. v.0.9 beta.</h3>
+            <h3>  </h3>
         </div>
 
+        <div class="UA">
+            <h3 id="demo"></h3>
+            <script>
+            let agent = navigator.userAgent;
+            document.getElementById("demo").innerHTML = "navigator.userAgent:" + agent;
+            </script>    
+        </div>
+
+
+
+
+
+        
+
+        <div class="tergiversor">
+            <div><img src="/tergiversor.svg"></div>
+        </div>
+        
 
 
     </body>

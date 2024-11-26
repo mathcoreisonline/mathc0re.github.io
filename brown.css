@@ -1,0 +1,213 @@
+    @font-face {
+    font-family: 'FragmentMono';
+    src: url(res/fonts/FragmentMono-Regular.ttf);
+    } 
+
+    @font-face {
+    font-family: 'Mega';
+    src: url(res/fonts/fluxmm-900.otf);
+    } 
+
+    @font-face {
+    font-family: 'PicoReg';
+    src: url(res/fonts/PicoA-Medium.ttf);
+    } 
+    
+    time
+    {
+        content: attr(data-location) '\00a0\00a0\00a0\00a0';
+        font-family: "FragmentMono";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 10px;
+        text-align: justify;
+        padding: 20px;
+        line-height: 12px;
+        margin:auto;
+        max-width: 800px;
+        display: block;
+    }
+    
+    body 
+    {
+        padding-top: 20px;
+        background-color: #322d24;
+        color: #d0bb95;
+        margin: 0;
+        padding: 42px;
+    }
+
+        
+    h1
+    {
+        font-family: "Mega";
+        font-style: normal;
+        list-style:none;
+        margin:0 auto;
+        font-size: 40px;
+        text-align: justify;
+        line-height: 82%;
+        display: block;
+        max-width: 800px;
+    }
+
+    h3
+    {
+        font-family: "FragmentMono";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 10px;
+        text-align: justify;
+        line-height: 12px;
+        margin:auto;
+        max-width: 800px;
+    }
+
+    h4
+    {
+        font-family: "Mega";
+        font-style: normal;
+        font-size: 22px;
+        text-align: justify;
+        line-height: 82%;
+        margin:auto;
+        max-width: 800px;
+    }   
+
+    video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: center;
+        top: 0;
+        left: 0;
+      }
+
+
+
+    p
+    {
+        font-family: "FragmentMono";
+        flex-basis:100%;
+        justify-content: center;
+        font-size: 12px;
+        text-align: left;
+        line-height: 18px;
+        font-weight: 100;
+        margin:auto;
+        max-width: 800px;
+    }
+
+    blockquote
+    {
+        font-family: "FragmentMono";
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    footer
+    {
+        font-family: "FragmentMono";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 10px;
+        text-align: justify;
+        padding-top: 4%;
+        padding: 20px;
+        padding-bottom: 50px;
+        line-height: 12px;
+
+        margin:auto;
+        max-width: 800px;
+    }
+
+    div.sidebar
+    {
+        font-family: "Mega";
+        text-decoration: none;
+        text-indent: 20px;
+        filter: invert(1)''
+        color:  #d0bb95;
+        resize: vertical;
+        bottom: 60px; 
+        display: inline-flex;
+        mix-blend-mode: difference;
+        position: fixed;
+        z-index: 7;
+        left: 23px;
+        paint-order: stroke fill;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    div.version
+    {
+        font-family: "PicoBlack";
+        text-decoration: none;
+        text-indent: 20px;
+        padding: 00px;
+        color:  #d0bb95;
+        resize: vertical;
+        font-weight: 700;
+        bottom: 40px; 
+        display: inline-flex;
+        position: fixed;
+        mix-blend-mode: difference;
+        z-index: 7;
+        paint-order: stroke fill;
+        left: 23px;
+    }
+
+
+    a 
+    { 
+        color:  #d0bb95;
+        text-decoration: none; 
+        -webkit-text-stroke: 5px #322d24;
+        paint-order: stroke fill;
+
+    }
+
+    a:hover 
+    {
+filter:invert(100)  
+    }
+
+    @media (max-width: 1164px) {
+        .sidebar 
+        {
+          flex-direction: column-reverse;
+          display: flow;
+          font-size: 18px;
+          justify-content: space-between;
+        }
+
+        body
+        {
+            padding-bottom: 40%
+        }
+
+
+
+    @media (max-width: 1920px) {
+            .sidebar 
+            {
+              position: fixed;
+              justify-content: space-between;
+              
+            }
+
+            body
+            {
+                padding-bottom: 30%;
+            }
+
+    @media (max-width: 768px) {
+        .gg-container {
+            max-width: 100%;
+                }
+                
+    }
+    
